@@ -92,7 +92,7 @@ describe('authRouter', () => {
   });
 
   test('register wrong credential', async () => {
-    emptyUser = { name: '', email: '', password: '' };
+    const emptyUser = { name: '', email: '', password: '' };
     const registerRes = await request(app).post('/api/auth').send(emptyUser);
     expect(registerRes.status).toBe(400);
     expect(registerRes.body.message).toBe('name, email, and password are required');

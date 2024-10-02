@@ -71,10 +71,6 @@ describe('franchiseRouter', () => {
     });
 
     test('getUserFranchises success', async () => {
-        const testId = 189;
-        const testEmail = '1gocaxfwwh@admin.com';
-        const testName = "1gocaxfwwh"
-
         const res = await request(app)
             .get(`/api/franchise/${adminUser.id}`)
             .set('Authorization', `Bearer ${adminAuthToken}`);
