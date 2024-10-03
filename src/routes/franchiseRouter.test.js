@@ -65,8 +65,18 @@ describe('franchiseRouter', () => {
         expect(res.status).toBe(200);
         expect(res.body).toEqual(
             expect.arrayContaining([
-                expect.objectContaining({ name: 'Pizza Palace' }),
-            ])
+                expect.objectContaining({
+                    id: 7,
+                    name: 'Pizza Palace' }),
+                ]),
+                expect.objectContaining({
+                    id: 12, 
+                    name: '0s0d8fvy3f'
+                }),
+                expect.objectContaining({
+                    id: 25, 
+                    name: 'pizza am7lx91y76'
+                }),            
         );
     });
 
