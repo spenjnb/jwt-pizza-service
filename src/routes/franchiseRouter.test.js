@@ -28,20 +28,20 @@ describe('franchiseRouter', () => {
         const franchiseData = {
             name: 'pizza ' + testHelper.randomName(),
             admins: [{ email: adminUser.email }],
-          };
+        };
       
-          const res = await request(app)
+        const res = await request(app)
             .post('/api/franchise')
             .send(franchiseData)
             .set('Authorization', `Bearer ${adminAuthToken}`);
       
-          expect(res.status).toBe(200);
-          expect(res.body.name).toBe(franchiseData.name);
-          expect(res.body.admins).toEqual(
+        expect(res.status).toBe(200);
+        expect(res.body.name).toBe(franchiseData.name);
+        expect(res.body.admins).toEqual(
             expect.arrayContaining([
-              expect.objectContaining({ email: adminUser.email }),
+                expect.objectContaining({ email: adminUser.email }),
             ])
-          );
+        );
     });
 
     test('createFranchise fail', async () => {
