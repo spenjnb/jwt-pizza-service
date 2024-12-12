@@ -1,0 +1,59 @@
+2024-12-12T08:21:26.239Z [INFO]: Starting simulation run...
+2024-12-12T08:21:26.304Z [ERROR]: Failed to register user: user2@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:21:26.307Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:21:26.307Z [ERROR]: Simulation run encountered an error: Cannot read properties of undefined (reading 'message')
+2024-12-12T08:21:26.308Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:21:41.249Z [INFO]: Starting simulation run...
+2024-12-12T08:21:41.254Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:21:41.254Z [ERROR]: Simulation run encountered an error: Cannot read properties of undefined (reading 'message')
+2024-12-12T08:21:41.255Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:21:41.255Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:22:07.867Z [INFO]: Starting simulation run...
+2024-12-12T08:22:07.901Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:22:07.901Z [ERROR]: Simulation run encountered an error: Cannot read properties of undefined (reading 'message')
+2024-12-12T08:22:07.902Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:22:07.902Z [ERROR]: Network error while fetching http://localhost:3001/api/auth: fetch failed
+2024-12-12T08:23:45.382Z [INFO]: Starting simulation run...
+2024-12-12T08:23:45.819Z [ERROR]: Failed to register user: a@jwt.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:45.821Z [ERROR]: Failed to register user: user1@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:45.822Z [ERROR]: Failed to register user: user2@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:46.040Z [ERROR]: Failed to login user: user1@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:46.058Z [ERROR]: Failed to login user: a@jwt.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:46.063Z [ERROR]: Failed to login user: user2@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:46.161Z [ERROR]: Failed to fetch menu | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:46.161Z [WARN]: No admin user found. Skipping admin operations.
+2024-12-12T08:23:46.245Z [INFO]: Triggered server exception | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:23:46.245Z [INFO]: Simulation run completed successfully.
+2024-12-12T08:24:00.390Z [INFO]: Starting simulation run...
+2024-12-12T08:24:00.622Z [ERROR]: Failed to register user: user1@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.627Z [ERROR]: Failed to register user: user2@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.628Z [ERROR]: Failed to register user: a@jwt.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.835Z [ERROR]: Failed to login user: user2@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.862Z [ERROR]: Failed to login user: user1@example.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.880Z [ERROR]: Failed to login user: a@jwt.com | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.948Z [ERROR]: Failed to fetch menu | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:00.948Z [WARN]: No admin user found. Skipping admin operations.
+2024-12-12T08:24:01.015Z [INFO]: Triggered server exception | Status: 500 | Message: logger.warn is not a function
+2024-12-12T08:24:01.015Z [INFO]: Simulation run completed successfully.
+2024-12-12T08:31:58.144Z [INFO]: Starting simulation run...
+2024-12-12T08:31:58.234Z [ERROR]: Failed to register user: user1@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.235Z [ERROR]: Failed to register user: user2@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.236Z [ERROR]: Failed to register user: a@jwt.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.241Z [ERROR]: Failed to login user: user1@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.243Z [ERROR]: Failed to login user: user2@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.245Z [ERROR]: Failed to login user: a@jwt.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.248Z [ERROR]: Failed to fetch menu | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.248Z [WARN]: No admin user found. Skipping admin operations.
+2024-12-12T08:31:58.250Z [INFO]: Triggered server exception | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:31:58.251Z [INFO]: Simulation run completed successfully.
+2024-12-12T08:33:46.336Z [INFO]: Starting simulation run...
+2024-12-12T08:33:46.423Z [ERROR]: Failed to register user: user1@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.424Z [ERROR]: Failed to register user: user2@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.425Z [ERROR]: Failed to register user: a@jwt.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.430Z [ERROR]: Failed to login user: user1@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.433Z [ERROR]: Failed to login user: user2@example.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.434Z [ERROR]: Failed to login user: a@jwt.com | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.437Z [ERROR]: Failed to fetch menu | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.437Z [WARN]: No admin user found. Skipping admin operations.
+2024-12-12T08:33:46.439Z [INFO]: Triggered server exception | Status: 404 | Message: Unknown endpoint.
+2024-12-12T08:33:46.439Z [INFO]: Simulation run completed successfully.
