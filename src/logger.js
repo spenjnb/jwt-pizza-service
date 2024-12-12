@@ -6,9 +6,9 @@ const config = require("./config.js");
 class Logger {
   constructor() {
     this.component = "jwt-pizza-service-dev";
-    this.userId = config.logging.userId;
-    this.url = config.logging.url;
-    this.apiKey = config.logging.apiKey;
+    this.userId = secrets.LOGGING_USER_ID;
+    this.url = secrets.LOGGING_URL;
+    this.apiKey = secrets.LOGGING_API_KEY;
   }
 
   /**

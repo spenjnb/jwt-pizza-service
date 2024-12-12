@@ -27,10 +27,10 @@ class MetricBuilder {
 
 class Metrics {
   constructor() {
-    this.source = config.metrics.source;
-    this.userId = config.metrics.userId;
-    this.url = config.metrics.url;
-    this.apiKey = config.metrics.apiKey;
+    this.source = "jwt-pizza-service-dev";
+    this.userId = secrets.METRICS_USER_ID;
+    this.url = secrets.METRICS_USER_ID;
+    this.apiKey = secrets.METRICS_API_KEY;
 
     // Initialize metric counters
     this.requestCounts = { GET: 0, POST: 0, PUT: 0, DELETE: 0 };
