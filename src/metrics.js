@@ -7,7 +7,7 @@ class MetricBuilder {
     this.lines = [];
   }
 
-  addMeasurement(measurement, tags = {}, fields = {}, timestamp = null) {
+  addMeasurement(measurement, tags = {}, fields = {}, _timestamp = null) {
     const tagStr = Object.entries(tags)
       .map(([k, v]) => `${k}=${v}`)
       .join(",");
@@ -69,7 +69,7 @@ class Metrics {
 
     res.on("finish", () => {
       const endTime = process.hrtime.bigint();
-      const latencyMs = Number(endTime - startTime) / 1_000_000;
+      // const latencyMs = Number(endTime - startTime) / 1_000_000;
       // Optionally, track global request latency
       // console.log(`Request Latency: ${latencyMs} ms`);
     });

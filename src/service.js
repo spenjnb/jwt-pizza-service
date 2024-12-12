@@ -71,7 +71,7 @@ app.use("*", (req, res) => {
   });
 });
 
-app.use(async (err, req, res, next) => {
+app.use(async (err, req, res) => {
   try {
     await logger.logException({
       message: err.message,
