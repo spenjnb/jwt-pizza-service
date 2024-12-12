@@ -7,7 +7,7 @@ class MetricBuilder {
     this.lines = [];
   }
 
-  addMeasurement(measurement, tags = {}, fields = {}, _timestamp = null) {
+  addMeasurement(measurement, tags = {}, fields = {}) {
     const tagStr = Object.entries(tags)
       .map(([k, v]) => `${k}=${v}`)
       .join(",");
@@ -53,7 +53,6 @@ class Metrics {
 
   // Middleware to track HTTP requests
   requestTracker = (req, res, next) => {
-    const startTime = process.hrtime.bigint();
     const method = req.method;
     if (this.requestCounts[method] !== undefined) {
       this.requestCounts[method]++;
@@ -66,13 +65,6 @@ class Metrics {
       this.activeUsers.add(req.user.id);
       console.log(`Active Users: ${this.activeUsers.size}`);
     }
-
-    res.on("finish", () => {
-      const endTime = process.hrtime.bigint();
-      // const latencyMs = Number(endTime - startTime) / 1_000_000;
-      // Optionally, track global request latency
-      // console.log(`Request Latency: ${latencyMs} ms`);
-    });
 
     next();
   };
