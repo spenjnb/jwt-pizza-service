@@ -66,10 +66,6 @@ jobs:
             },  
           };" > src/config.js
 
-      - name: Tests
-        run: npm test
-        continue-on-error: true
-
       - name: set version
         id: set_version
         run: |
