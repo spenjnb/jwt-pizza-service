@@ -5,7 +5,7 @@ const config = require("./config.js");
 
 class Logger {
   constructor() {
-    this.component = config.logging.component || "jwt-pizza-service-dev"; // Ensure 'component' is defined
+    this.component = "jwt-pizza-service-dev";
     this.userId = config.logging.userId;
     this.url = config.logging.url;
     this.apiKey = config.logging.apiKey;
